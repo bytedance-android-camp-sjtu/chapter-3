@@ -28,7 +28,7 @@ public class DynamicAddFragmentActivity extends AppCompatActivity {
             public void onClick(View v) {
                 FragmentManager manager = getSupportFragmentManager();
                 FragmentTransaction transaction = manager.beginTransaction();
-//                transaction.addToBackStack(null);
+                transaction.addToBackStack(null);
                 transaction.replace(R.id.fragment_container,new FragmentB());
                 transaction.commit();
 //
